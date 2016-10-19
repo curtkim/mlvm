@@ -1,0 +1,19 @@
+---
+- hosts: all
+  vars:
+  tasks:
+
+  - apt: name={{ item }}
+    with_items:
+    - liblapack-dev
+    - libopenblas-dev
+    - python-dev
+    - python-pip
+    - python-nose
+    - python-numpy
+    - python-scipy
+
+  - pip: name=Theano
+
+  # install tensorflow (linux, cpu)
+  - pip: name=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp27-none-linux_x86_64.whl
