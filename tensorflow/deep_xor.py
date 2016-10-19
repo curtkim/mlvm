@@ -2,8 +2,8 @@ import tensorflow as tf
 import numpy as np
 
 xy = np.loadtxt('xor.txt', unpack=True)
-x_data = np.transpose(xy[0:-1])
-y_data = np.reshape(xy[-1], (4, 1))
+x_data = np.transpose(xy[0:-1])             # shape: (4,2)
+y_data = np.reshape(xy[-1], (4, 1))         # shape: (4,1)
 
 X = tf.placeholder(tf.float32, name='x-input')
 Y = tf.placeholder(tf.float32, name='y-input')
