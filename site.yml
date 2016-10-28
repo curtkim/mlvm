@@ -12,8 +12,12 @@
     - python-nose
     - python-numpy
     - python-scipy
+    - python-matplotlib
 
   - pip: name=Theano
   - pip: name=keras
   # install tensorflow (linux, cpu)
   - pip: name=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp27-none-linux_x86_64.whl
+  - pip: name=matplotlib
+  - pip: name=scikit-learn
+  - pip: name=h5py
