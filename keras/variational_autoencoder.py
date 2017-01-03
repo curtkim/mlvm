@@ -16,7 +16,7 @@ batch_size = 100
 original_dim = 784
 latent_dim = 2
 intermediate_dim = 256
-nb_epoch = 10
+nb_epoch = 50
 epsilon_std = 0.01
 
 x = Input(batch_shape=(batch_size, original_dim))
