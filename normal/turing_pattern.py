@@ -48,7 +48,6 @@ for i in range(n):
         Z[:,0] = Z[:,1]
         Z[:,-1] = Z[:,-2]
 
-    if i % 1000 == 0:
-      plt.imshow(U, cmap=plt.cm.copper, extent=[-1,1,-1,1]);
-      plt.xticks([]); plt.yticks([]);
-      plt.savefig("turing_pattern"+ str(i) + ".png")
+plt.imshow(U, cmap=plt.cm.copper, extent=[-1,1,-1,1]);
+plt.xticks([]); plt.yticks([]);
+plt.savefig("turing_pattern.png")
