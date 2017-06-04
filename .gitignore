@@ -1,3 +1,4 @@
 .vagrant
 **/*.png
 keras/wonderland.txt
+**/.DS_Store
