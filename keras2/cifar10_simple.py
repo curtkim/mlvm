@@ -4,7 +4,6 @@ from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation, Flatten
 from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.optimizers import SGD, Adam, RMSprop
-import matplotlib.pyplot as plt
 
 # CIFAR_10 is a set of 60K images 32x32 pixels on 3 channels
 IMG_CHANNELS = 3
