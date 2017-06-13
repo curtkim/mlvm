@@ -9,7 +9,6 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 from keras.optimizers import SGD, RMSprop, Adam
 import numpy as np
-import matplotlib.pyplot as plt
 
 class LeNet:
    @staticmethod
